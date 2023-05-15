@@ -1,0 +1,5 @@
+<label>Pays </label>
+<input #input type="text" name="" id="" (focus)="EventShowCountryList(true)" (blur)="EventShowCountryList(false)">
+<ul *ngIf="showCountryList">
+  <li *ngFor="let country of filteredCountries" (mousedown)="clickcountrie(country)">{{ country.name }}</li>
+</ul>
